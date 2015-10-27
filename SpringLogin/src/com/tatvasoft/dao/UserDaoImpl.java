@@ -28,6 +28,7 @@ public class UserDaoImpl implements IUserDao {
 		//To show all user list
 		Query query = sessionFactory.getCurrentSession().createQuery("from User");
 		return (List<User>) query.list();
+		System.out.println("vrunda listed");
 	}
 
 
